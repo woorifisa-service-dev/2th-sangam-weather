@@ -17,5 +17,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["server"]
+  "include": ["server"],
+  "exclude": ["node_modules"]
 }
