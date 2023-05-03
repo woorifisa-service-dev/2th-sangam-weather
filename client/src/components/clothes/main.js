@@ -30,7 +30,7 @@ let useWeather = (temp, isRain) => {
 
   for (let i = 0; i < clothLength[path - 1]; i++) {
     let list = document.createElement('li');
-    list.style.background = `url('./src/img/clothes/${path}/${
+    list.style.background = `url('./src/public/img/clothes/${path}/${
       i + 1
     }.png')no-repeat center / contain`;
     imgWrap.appendChild(list);
