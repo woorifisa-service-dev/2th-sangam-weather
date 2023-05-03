@@ -1,0 +1,40 @@
+.row {
+  height: 20rem;
+}
+.image-box {
+  align-items: center;
+  display: flex;
+  width: 14rem;
+
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-thumbnail {
+  width: 40%;
+  height: 37%;
+  object-fit: fill;
+}
+
+.weather-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wheather-box__footer {
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.unit-box {
+  display: flex;
+}
