@@ -5,13 +5,14 @@
   align-items: center;
   display: flex;
   width: 14rem;
-
-  overflow: hidden;
   margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 20px;
 }
 
 .image-thumbnail {
-  width: 40%;
+  width: 60%;
   height: 37%;
   object-fit: fill;
 }
@@ -20,6 +21,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
 
 .wheather-box__footer {
@@ -27,12 +29,20 @@
   display: flex;
   align-items: center;
 }
+.wheather-box__footer > div + div {
+  border-left: 1px solid gray;
+}
 
 .footer-card {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
+}
+.footer-card > div:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .unit-box {

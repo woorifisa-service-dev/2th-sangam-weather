@@ -1,0 +1,22 @@
+.imgWrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgWrap li {
+  width: 8rem;
+  height: 8rem;
+  padding: -5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.clothesTitle {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px 0;
+}
