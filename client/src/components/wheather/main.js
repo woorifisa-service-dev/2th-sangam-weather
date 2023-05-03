@@ -1,7 +1,7 @@
 (async () => {
   try {
     document.querySelector('#loader').classList.add('loading');
-    const result = await (await fetch('/weather')).json();
+    const result = await (await fetch('http://49.50.163.81:3000/weather')).json();
     const weatherIcon = document.createElement('img');
     weatherIcon.src = './src/public/img/weather/' + result.icon + '.png';
     weatherIcon.classList.add('image-thumbnail');
