@@ -4,7 +4,7 @@
  *
  */
 
-const htmlRoot = ['src/recommend/index.html'];
+const htmlRoot = ['src/wheather/index.html', 'src/recommend/index.html'];
 const loadHTML = file => {
   const rawFile = new XMLHttpRequest();
   rawFile.open('GET', file, false);
