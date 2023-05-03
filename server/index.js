@@ -1,13 +1,11 @@
 import express from 'express';
 import fs from 'fs';
 import weather from './openWeather.js';
-import cors from 'cors';
+const cors = require('cors');
 
 export const app = express();
 const port = 3000;
 const restaurantList = JSON.parse(fs.readFileSync('restaurant.json'));
-
-app.use(cors());
 
 const options = {
   origin: '*', // 접근 권한을 부여하는 도메인
