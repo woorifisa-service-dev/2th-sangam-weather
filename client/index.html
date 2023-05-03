@@ -10,13 +10,20 @@
     <meta name="Description" content="상암동 날씨, 음식, 옷차림을 추천해주는 사이트입니다." />
     <meta http-equiv="Subject" content="날씨" />
 
+    <link rel="favicon" href="favicon.ico" />
     <link rel="stylesheet" href="./src/public/style/reset.css" />
     <link rel="stylesheet" href="./src/public/style/common.css" />
     <link rel="stylesheet" href="./src/components/wheather/style.css" />
     <link rel="stylesheet" href="./src/components/clothes/style.css" />
     <link rel="stylesheet" href="./src/components/recommend/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./app.js"></script>
-    <link rel="favicon" href="favicon.ico" />
     <title>Sangam Weather</title>
   </head>
   <body>
@@ -32,6 +39,9 @@
       </script>
     </main>
     <footer>© 2023 SangamWeather all rights reserved.</footer>
+    <div id="loader">
+      <i class="fa-solid fa-spinner fa-spin fa-spin-reverse"></i>
+    </div>
     <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd9c1238128731499166605c102683cf"
