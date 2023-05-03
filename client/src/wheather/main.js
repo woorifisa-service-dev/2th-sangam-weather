@@ -13,7 +13,9 @@
   humidityTextBox.innerText = result.humidity;
   speedTextBox.innerText = result.speed;
   rainTextBox.innerText = result.rain;
-  useWeather(result.temp, result.rain ? true : false);
+  const isRain = result.rain ? true : false;
+  useWeather(result.temp, isRain);
+  await recommendRestaurant(result.temp, isRain);
 })();
 
 async function getWeather() {

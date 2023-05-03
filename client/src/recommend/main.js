@@ -5,13 +5,55 @@ const options = {
 };
 
 const map = new kakao.maps.Map(container, options);
-// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
 const mapTypeControl = new kakao.maps.MapTypeControl();
-
-// 지도에 컨트롤을 추가해야 지도위에 표시됩니다
-// kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
 map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
-// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
 const zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+const markerPosition = new kakao.maps.LatLng(37.5820627, 126.8890844);
+const marker = new kakao.maps.Marker({
+  position: markerPosition,
+});
+marker.setMap(map);
+
+const recommendRestaurant = async (temp, isRain) => {
+  const data = await (await fetch('/restaurantInfo')).json();
+  let filtteredArray = data;
+  if (temp <= 0) {
+    filtteredArray = filtteredArray.filter(list => {
+      if (
+        list.name.includes('국수') ||
+        list.name.includes('찌개') ||
+        list.name.includes('짜글이') ||
+        list.name.includes('탄탄면')
+      ) {
+        return list;
+      }
+    });
+  } else if (temp >= 30) {
+    filtteredArray = filtteredArray.filter(list => {
+      if (
+        list.name.includes('김밥') ||
+        list.name.includes('써브웨이') ||
+        list.name.includes('온돈부리') ||
+        list.name.includes('상암회관')
+      ) {
+        return list;
+      }
+    });
+  } else if (isRain) {
+    filtteredArray = filtteredArray.filter(list => {
+      if (list.name.includes('칼국수') || list.name.includes('김치')) {
+        return list;
+      }
+    });
+  }
+  let randomFood = filtteredArray[Math.floor(Math.random() * filtteredArray.length)];
+  document.querySelector('.restaurant-recommend h3').innerText = randomFood.name;
+  for (const list of randomFood.food) {
+    const li = document.createElement('li');
+    li.innerText = list;
+    document.querySelector('.restaurant-recommend ul').appendChild(li);
+  }
+  document.querySelector('.restaurant-recommend address').innerText = randomFood.address;
+  options.center = new kakao.maps.LatLng(randomFood.lat, randomFood.lon);
+};
