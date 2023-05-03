@@ -16,7 +16,7 @@ const marker = new kakao.maps.Marker({
 marker.setMap(map);
 
 const recommendRestaurant = async (temp, isRain) => {
-  const data = await (await fetch('http://49.50.163.81:3000/restaurantInfo')).json();
+  const data = await (await fetch('/restaurantInfo')).json();
   let filtteredArray = data;
   if (temp <= 0) {
     filtteredArray = filtteredArray.filter(list => {

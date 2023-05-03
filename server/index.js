@@ -1,7 +1,7 @@
 import express from 'express';
 import fs from 'fs';
 import weather from './openWeather.js';
-const cors = require('cors');
+import cors from 'cors';
 
 export const app = express();
 const port = 3000;
