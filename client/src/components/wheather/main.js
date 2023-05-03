@@ -20,7 +20,6 @@
     await recommendRestaurant(result.temp, isRain);
     document.querySelector('#loader').classList.remove('loading');
   } catch (error) {
-    console.error(error);
     alert('서버에 문제가 생겼습니다.');
   }
 })();
