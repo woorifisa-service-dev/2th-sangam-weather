@@ -1,7 +1,7 @@
 (async () => {
   const result = await getWeather();
   const weatherIcon = document.createElement('img');
-  weatherIcon.src = './src/img/weather/' + result.icon + '.png';
+  weatherIcon.src = './src/public/img/weather/' + result.icon + '.png';
   weatherIcon.classList.add('image-thumbnail');
   document.querySelector('.image-box').prepend(weatherIcon);
   let temperatureTextBox = document.getElementById('temperature-box');

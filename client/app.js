@@ -5,9 +5,9 @@
  */
 
 const htmlRoot = [
-  'src/wheather/index.html',
-  'src/clothes/clothes.html',
-  'src/recommend/index.html',
+  'src/components/wheather/index.html',
+  'src/components/clothes/clothes.html',
+  'src/components/recommend/index.html',
 ];
 const loadHTML = file => {
   const rawFile = new XMLHttpRequest();
