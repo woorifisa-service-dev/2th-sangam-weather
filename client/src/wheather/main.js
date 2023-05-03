@@ -9,7 +9,7 @@
   let speedTextBox = document.getElementById('speedText-box');
   let rainTextBox = document.getElementById('rainText-box');
 
-  temperatureTextBox.innerText = result.temp;
+  temperatureTextBox.innerText = Math.ceil(result.temp);
   humidityTextBox.innerText = result.humidity;
   speedTextBox.innerText = result.speed;
   rainTextBox.innerText = result.rain;
