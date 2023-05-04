@@ -177,6 +177,10 @@ node서버에서 (/weather 요청을 받아) 날씨 api를 불러오는 fetch()�
 
 ![image](https://user-images.githubusercontent.com/122027452/236087767-1f1d4ea8-d9ae-4291-b16f-2d8ceb250963.png)
 
+![image](https://user-images.githubusercontent.com/122027452/236114775-4093b529-9274-439b-bd95-90b24bad7c41.png)
+
+![image](https://user-images.githubusercontent.com/122027452/236114998-c8767ccf-27dd-4424-aa02-d09578f68906.png)
+
 에러가 아닌, 단순히 공통헤더를 설정하는 부분이었고
 요청을 보내고 저 상태에서 계속 pending 상태가 되어 위와 같이 표시되고 있었습니다.
 
