@@ -34,6 +34,10 @@ sangam-weather
    └─ restaurant.json
 ```
 
+## 유효성 검사 결과
+
+![image](https://user-images.githubusercontent.com/122027452/236105662-e1b7dbaa-3b5e-4e94-be1c-ddf10c03ff2e.png)
+
 ## Used Stack
 
  <img src="https://img.shields.io/badge/HTML5-E34F26" >
@@ -183,7 +187,7 @@ CORS 문제인줄 알고 잘못된 방향으로 문제를 해결하는데 시간
 
 ##### ✅ 소감
 
-git과 github에 대해 많이 배울 수 있었습니다. 팀프로젝트 할 때 issue, pull request 등을 사용하는 방법에 대해 알게되었고 branch 관리하는 방법에 대해 새롭게 알게되었습니다. 그리고 원활한 소통을 위한 적절한 컨벤션을 사용하는 것도 연습할 수 있었습니다.`<li>`를 동적으로 추가하여 이미지 부여하는 방법과 파비콘 추가하는 새로운 경험을 할 수 있어서 유익했습니다.
+git과 github에 대해 많이 배울 수 있었습니다. 팀프로젝트 할 때 issue, pull request 등을 사용하는 방법에 대해 알게되었고 branch 관리하는 방법에 대해 새롭게 알게되었습니다. 그리고 원활한 소통을 위한 적절한 컨벤션을 사용하는 것도 연습할 수 있었습니다. `<li>`를 동적으로 추가하여 이미지 부여하는 방법과 파비콘 추가하는 새로운 경험을 할 수 있어서 유익했습니다.
 
 ##### ✅ 어려웠던 부분 & 해결 방법
 
