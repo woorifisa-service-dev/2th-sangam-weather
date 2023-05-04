@@ -6,15 +6,10 @@
     weatherIcon.src = './src/public/img/weather/' + result.icon + '.png';
     weatherIcon.classList.add('image-thumbnail');
     document.querySelector('.image-box').prepend(weatherIcon);
-    let temperatureTextBox = document.getElementById('temperature-box');
-    let humidityTextBox = document.getElementById('humidityText-box');
-    let speedTextBox = document.getElementById('speedText-box');
-    let rainTextBox = document.getElementById('rainText-box');
-
-    temperatureTextBox.innerText = Math.ceil(result.temp);
-    humidityTextBox.innerText = result.humidity;
-    speedTextBox.innerText = result.speed;
-    rainTextBox.innerText = result.rain;
+    document.getElementById('temperature-box').innerText = Math.ceil(result.temp);
+    document.getElementById('humidityText-box').innerText = result.humidity;
+    document.getElementById('speedText-box').innerText = result.speed;
+    document.getElementById('rainText-box').innerText = result.rain;
     const isRain = result.rain ? true : false;
     useWeather(result.temp, isRain);
     await recommendRestaurant(result.temp, isRain);
