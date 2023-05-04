@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '../.env' }); //process.env.API_KEY
+import fetch from 'node-fetch';
 
 //강수량 가져오는 함수 - 없으면 0 반환
 function getRain(data) {
